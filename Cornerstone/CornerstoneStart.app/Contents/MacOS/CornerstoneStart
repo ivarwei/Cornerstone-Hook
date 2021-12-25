@@ -1,0 +1,3 @@
+#!/bin/sh
+TempAppPath=$(cd $(dirname $0) && pwd)
+DYLD_INSERT_LIBRARIES=${TempAppPath}/../Frameworks/libCornerstone.dylib /Applications/Cornerstone.app/Contents/MacOS/Cornerstone
